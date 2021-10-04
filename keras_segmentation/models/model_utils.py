@@ -1,8 +1,7 @@
-import tensorflow as tf
-from tf.keras.models import *
-from tf.keras.layers import *
+from tensorflow.keras.models import *
+from tensorflow.keras.layers import *
 
-import tf.keras.backend as K
+import tensorflow.keras.backend as K
 from types import MethodType
 
 

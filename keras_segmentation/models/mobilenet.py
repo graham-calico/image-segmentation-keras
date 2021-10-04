@@ -1,9 +1,7 @@
-import tensorflor as tf
-from tf.keras.models import *
-from tf.keras.layers import *
-import tf.keras.backend as K
-import tf.keras
-
+import tensorflow.keras as keras
+from tensorflow.keras.models import *
+from tensorflow.keras.layers import *
+import tensorflow.keras.backend as K
 
 
 BASE_WEIGHT_PATH = ('https://github.com/fchollet/deep-learning-models/'

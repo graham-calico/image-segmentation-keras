@@ -1,8 +1,7 @@
-import tensorflow as tf
-from tf.keras.models import *
-from tf.keras.layers import *
-import tf.keras.backend as K
 
+from tensorflow.keras.models import *
+from tensorflow.keras.layers import *
+import tensorflow.keras.backend as K
 
 from .config import IMAGE_ORDERING
 from .model_utils import get_segmentation_model , resize_image

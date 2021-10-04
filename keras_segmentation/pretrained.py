@@ -72,7 +72,7 @@ def pspnet_101_voc12():
     }
 
     model_url = "https://www.dropbox.com/s/uvqj2cjo4b9c5wg/pspnet101_voc2012.h5?dl=1"
-    latest_weights =  keras.utils.get_file( "pspnet101_voc2012.h5" , model_url  )
+    latest_weights = keras.utils.get_file( "pspnet101_voc2012.h5" , model_url  )
     
     return model_from_checkpoint_path( model_config , latest_weights  )
 

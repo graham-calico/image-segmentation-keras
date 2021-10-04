@@ -1,6 +1,5 @@
-import tensorflow as tf
-from tf.keras.models import *
-from tf.keras.layers import *
+from tensorflow.keras.models import *
+from tensorflow.keras.layers import *
 
 
 from .config import IMAGE_ORDERING
