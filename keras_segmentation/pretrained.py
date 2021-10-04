@@ -1,5 +1,4 @@
-from keras.models import load_model
-import keras
+import tensorflow.keras as keras
 
 from .models import model_from_name
 
@@ -24,7 +23,7 @@ def resnet_pspnet_VOC12_v0_1():
     }
 
     model_url = "https://github.com/divamgupta/image-segmentation-keras/releases/download/pretrained_model_1/r2_voc12_resnetpspnet_384x576.24"
-    latest_weights =  keras.utils.get_file( model_url.split("/")[-1] , model_url  )
+    latest_weights = keras.utils.get_file( model_url.split("/")[-1] , model_url  )
     
     return model_from_checkpoint_path( model_config , latest_weights  )
 
@@ -73,7 +72,7 @@ def pspnet_101_voc12():
     }
 
     model_url = "https://www.dropbox.com/s/uvqj2cjo4b9c5wg/pspnet101_voc2012.h5?dl=1"
-    latest_weights =  keras.utils.get_file( "pspnet101_voc2012.h5" , model_url  )
+    latest_weights = keras.utils.get_file( "pspnet101_voc2012.h5" , model_url  )
     
     return model_from_checkpoint_path( model_config , latest_weights  )
 
