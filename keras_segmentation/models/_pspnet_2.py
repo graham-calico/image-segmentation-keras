@@ -1,16 +1,12 @@
 # This code is proveded by Vladkryvoruchko and small modifications done by me .
 
-
-from math import ceil
-from keras import layers
-from keras.layers import Conv2D, MaxPooling2D, AveragePooling2D
-from keras.layers import BatchNormalization, Activation, Input, Dropout, ZeroPadding2D, Lambda
-from keras.layers.merge import Concatenate, Add
-from keras.models import Model
-from keras.optimizers import SGD
-
 import tensorflow as tf
 
+from math import ceil
+from tf.keras import layers
+from tf.keras.layers import Conv2D, MaxPooling2D, AveragePooling2D
+from tf.keras.layers import BatchNormalization, Activation, Input, Dropout, ZeroPadding2D, Lambda
+from tf.keras.layers.merge import Concatenate, Add
 
 from .config import IMAGE_ORDERING
 from .model_utils import get_segmentation_model , resize_image

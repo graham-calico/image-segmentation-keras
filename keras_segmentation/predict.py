@@ -1,12 +1,8 @@
-import argparse
-
-from keras.models import load_model
 import glob
 import cv2
 import numpy as np
 import random
-import os
-from tqdm import tqdm 
+from tqdm import tqdm
 from .train import find_latest_checkpoint
 import os
 from .data_utils.data_loader import get_image_arr , get_segmentation_arr

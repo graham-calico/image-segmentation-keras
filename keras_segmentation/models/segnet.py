@@ -1,8 +1,7 @@
 
-
-from keras.models import *
-from keras.layers import *
-import os
+import tensorflow as tf
+from tf.keras.models import *
+from tf.keras.layers import *
 
 from .config import IMAGE_ORDERING
 from .model_utils import get_segmentation_model
@@ -10,7 +9,6 @@ from .vgg16 import get_vgg_encoder
 from .mobilenet import get_mobilenet_encoder
 from .basic_models import vanilla_encoder
 from .resnet50 import get_resnet50_encoder
-
 
 
 def segnet_decoder(  f , n_classes , n_up=3 ):

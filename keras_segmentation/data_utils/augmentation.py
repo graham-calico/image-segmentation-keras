@@ -1,10 +1,4 @@
-
-import random
 import numpy as np
-import cv2
-
-
-
 
 seq = [None]
 

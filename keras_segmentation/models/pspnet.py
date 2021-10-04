@@ -1,13 +1,12 @@
-import keras
-from keras.models import *
-from keras.layers import *
-import keras.backend as K
+import tensorflow as tf
+from tf.keras.models import *
+from tf.keras.layers import *
+import tf.keras.backend as K
 
 
 from .config import IMAGE_ORDERING
 from .model_utils import get_segmentation_model , resize_image
 from .vgg16 import get_vgg_encoder
-from .mobilenet import get_mobilenet_encoder
 from .basic_models import vanilla_encoder
 from .resnet50 import get_resnet50_encoder
 

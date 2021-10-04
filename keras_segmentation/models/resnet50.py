@@ -1,8 +1,8 @@
-import keras
-from keras.models import *
-from keras.layers import *
-from keras import layers
-import keras.backend as K
+import tensorflow as tf
+
+from tf.keras.models import *
+from tf.keras.layers import *
+from tf.keras import layers
 
 # code taken from https://github.com/fchollet/deep-learning-models/blob/master/resnet50.py
 
@@ -166,7 +166,7 @@ def get_resnet50_encoder(input_height=224 ,  input_width=224 , pretrained='image
     # f6 = x 
 
     if pretrained == 'imagenet':
-        weights_path = keras.utils.get_file( pretrained_url.split("/")[-1] , pretrained_url  )
+        weights_path = tf.keras.utils.get_file( pretrained_url.split("/")[-1] , pretrained_url  )
         Model(  img_input , x  ).load_weights(weights_path)
 
 
